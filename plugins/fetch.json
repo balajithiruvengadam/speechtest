@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-speechrecognizer": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/poiuytrez/SpeechRecognizer"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
