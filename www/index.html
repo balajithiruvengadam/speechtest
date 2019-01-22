@@ -29,19 +29,21 @@
     <body>
         <div class="applanding">
             <h1>BlackBeltHelp Speech Recognition</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+           
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
-        <div >
-             <button id="btn1"><img src="img/download.png"></button> 
-            <button id="btn2" class="getSLang">Get Supported Languages</button>
+        <div class="speakBtn">
+             <button id="btn1"><img src="img/download.png" class="speechImg"></button> 
+              <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
         </div>
+            <button id="btn2" class="getSLang">Get Supported Languages</button>
+        
     </body>
 </html>
