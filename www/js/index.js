@@ -45,7 +45,8 @@ var app = {
                 var language = "en-US";                     // optional
                 window.plugins.speechrecognizer.startRecognize(function(result){
                     alert(result);
-                    TTS.speak(result[0],function(){
+                    console.log(result[0])
+                    TTS.speak('Awesome',function(){
                         alert("onfulfilled success")
                     },function(){
                         alert("onrejected reject")
