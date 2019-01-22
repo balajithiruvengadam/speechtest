@@ -46,10 +46,14 @@ var app = {
                 window.plugins.speechrecognizer.startRecognize(function(result){
                     alert(result);
                     console.log(result[0])
-                    TTS.speak('Awesome',function(){
-                        alert("onfulfilled success")
+                    TTS.speak({
+                        text: 'hello, world!',
+                        locale: 'en-GB',
+                        rate: 0.75
                     },function(){
-                        alert("onrejected reject")
+                        alert("success")
+                    },function(){
+                        alert("reject")
                     });
                 }, function(errorMessage){
                     console.log("Error message: " + errorMessage);
