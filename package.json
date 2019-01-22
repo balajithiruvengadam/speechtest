@@ -1,13 +1,13 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloCordova",
+    "name": "Speech Test",
+    "displayName": "SpeechTest",
     "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "A sample Cordova application to test Speech Recognition.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Apache Cordova Team",
+    "author": "BBH",
     "license": "Apache-2.0",
     "dependencies": {
         "SpeechRecognizer": "git+https://github.com/poiuytrez/SpeechRecognizer.git",

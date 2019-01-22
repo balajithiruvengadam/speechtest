@@ -68,7 +68,17 @@ body {
     padding: 180px 0px 0px 0px;
     margin: -115px 0px 0px -112px;
 }
-
+.getSLang{
+    position: absolute;
+    bottom: 10px;
+    left: 34%;
+    font-size: x-large;
+}
+.speakBtn{
+        position: absolute;
+        top: 50%;
+        left: 45%;
+}
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
