@@ -46,10 +46,10 @@ var app = {
                 window.plugins.speechrecognizer.startRecognize(function(result){
                     alert(result);
                     console.log(result[0])
-                    TTS.speak({
-                        text: 'hello, world!',
-                        locale: 'en-GB',
-                        rate: 0.75
+                    Window.TTS.speak({
+                        text: result[0],
+                        locale: 'en-US',
+                        rate: 1.0
                     },function(){
                         alert("success")
                     },function(){
