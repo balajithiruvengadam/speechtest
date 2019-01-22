@@ -44,16 +44,18 @@ var app = {
                 var promptString = "Speak now"; // optional
                 var language = "en-US";                     // optional
                 window.plugins.speechrecognizer.startRecognize(function(result){
-                    alert(result);
-                    console.log(result[0])
-                    Window.TTS.speak({
+                    console.log(result);
+                    console.log(result[0]);
+                    TTS.speak({
                         text: result[0],
                         locale: 'en-US',
                         rate: 1.0
                     },function(){
-                        alert("success")
+                        console.log("success");
+                        //alert("success")
                     },function(){
-                        alert("reject")
+                        console.log("reject");
+                        //alert("reject")
                     });
                 }, function(errorMessage){
                     console.log("Error message: " + errorMessage);
