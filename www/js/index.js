@@ -43,6 +43,7 @@ var app = {
                 var promptString = "Speak now"; // optional
                 var language = "en-US";                     // optional
                 window.plugins.speechrecognizer.startRecognize(function(result){
+                    window.plugins.TTS.speak(result);
                     alert(result);
                 }, function(errorMessage){
                     console.log("Error message: " + errorMessage);
