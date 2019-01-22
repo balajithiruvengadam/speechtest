@@ -16,24 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-declare module TTS {
-    interface IOptions {
-        /** text to speak */
-        text: string;
-        /** a string like 'en-US', 'zh-CN', etc */
-        locale?: string;
-        /** speed rate, 0 ~ 1 */
-        rate?: number;
-    }
-
-    function speak(options: IOptions, onfulfilled: () => void, onrejected: (reason) => void): void;
-    function speak(text: string, onfulfilled: () => void, onrejected: (reason) => void): void;
-
-    /** for my own usage, or you may want to use my promise library ThenFail (https://github.com/vilic/thenfail)... */
-    function speak(options: IOptions): ThenFail<void>;
-    function speak(text: string): ThenFail<void>;
-}
-
 var app = {
     // Application Constructor
     initialize: function() {
@@ -63,7 +45,7 @@ var app = {
                 var language = "en-US";                     // optional
                 window.plugins.speechrecognizer.startRecognize(function(result){
                     alert(result);
-                    window.TTS.speak(result);
+                    TTS.speak(result[0]);
                 }, function(errorMessage){
                     console.log("Error message: " + errorMessage);
                 }, maxMatches, promptString, language);

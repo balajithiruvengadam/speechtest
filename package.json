@@ -11,7 +11,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "SpeechRecognizer": "git+https://github.com/poiuytrez/SpeechRecognizer.git",
-        "cordova-plugin-tts": "^0.2.3"
+        "cordova-plugin-tts": "git+https://github.com/vilic/cordova-plugin-tts.git"
     },
     "cordova": {
         "plugins": {
