@@ -10,11 +10,13 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "SpeechRecognizer": "git+https://github.com/poiuytrez/SpeechRecognizer.git"
+        "SpeechRecognizer": "git+https://github.com/poiuytrez/SpeechRecognizer.git",
+        "cordova-plugin-tts": "^0.2.3"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-speechrecognizer": {}
+            "cordova-plugin-speechrecognizer": {},
+            "cordova-plugin-tts": {}
         }
     }
 }
