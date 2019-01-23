@@ -11,12 +11,14 @@
     "license": "Apache-2.0",
     "dependencies": {
         "SpeechRecognizer": "git+https://github.com/poiuytrez/SpeechRecognizer.git",
+        "cordova-plugin-geolocation": "^4.0.1",
         "cordova-plugin-tts": "git+https://github.com/vilic/cordova-plugin-tts.git"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-speechrecognizer": {},
-            "cordova-plugin-tts": {}
+            "cordova-plugin-tts": {},
+            "cordova-plugin-geolocation": {}
         }
     }
 }

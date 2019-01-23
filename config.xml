@@ -25,4 +25,5 @@
     </platform>
     <plugin name="cordova-plugin-speechrecognizer" spec="https://github.com/poiuytrez/SpeechRecognizer" />
     <plugin name="cordova-plugin-tts" spec="^0.2.3" />
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
 </widget>
