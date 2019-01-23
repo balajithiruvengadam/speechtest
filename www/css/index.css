@@ -80,8 +80,13 @@ body {
         left: 42%;
 }
 .speechImg{
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
+}
+.close-image{
+    display: block;
+    height: 200px;  
+    width: 200px;
 }
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {

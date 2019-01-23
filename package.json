@@ -1,8 +1,8 @@
 {
-    "name": "Speech Test",
-    "displayName": "SpeechTest",
+    "name": "VoiceBot",
+    "displayName": "VoiceBot",
     "version": "1.0.0",
-    "description": "A sample Cordova application to test Speech Recognition.",
+    "description": "A sample Mobile App to test Speech Recognition.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
