@@ -37,20 +37,16 @@ var app = {
         app.receivedEvent('deviceready');
     },
 
-    //get Device Location
-    getDeviceLocation: function () {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError)
-    },
-
-    onSuccess : function (position) {
-        alert( 'Latitude: ' + position.coords.latitude + '\n' +
+        //get Device Location
+    getDeviceLocation: function() {
+        navigator.geolocation.getCurrentPosition(function(position){
+                    alert( 'Latitude: ' + position.coords.latitude + '\n' +
                 'Longitude: '          + position.coords.longitude );
-    },
-
-    onError: function (error) {
-        alert('code: '    + error.code    + '\n' +
+        }, function (error) {
+                    alert('code: '    + error.code    + '\n' +
             'message: ' + error.message + '\n');
-    },
+        });
+   },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -60,7 +56,7 @@ var app = {
                 var language = "en-US";                     // optional
                 window.plugins.speechrecognizer.startRecognize(function(result){
                     console.log(result);
-                    getDeviceLocation ();
+                    app.getDeviceLocation ();
                     console.log(result[0]);
                     TTS.speak({
                         text: result[0],
