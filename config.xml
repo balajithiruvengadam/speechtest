@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.bbh.voicebot" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="io.bbh.voicebot" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>SpeechTest</name>
     <description>
         BBH SpeechReconition App.
@@ -18,18 +18,19 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <config-file target="AndroidManifest.xml" parent="/*">
+        <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
             <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-            <uses-feature android:name="android.hardware.location.gps"/>
+            <uses-feature android:name="android.hardware.location.gps" />
         </config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-speechrecognizer" spec="https://github.com/poiuytrez/SpeechRecognizer" />
-    <plugin name="cordova-plugin-tts" spec="^0.2.3" />
-    <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
+    <plugin spec="https://github.com/poiuytrez/SpeechRecognizer#0c9c2e1" />
+    <plugin name="cordova-plugin-tts" spec="0.2.3" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <plugin name="org.apache.cordova.geolocation" spec="^0.3.6" />
 </widget>
