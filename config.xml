@@ -18,6 +18,15 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-feature android:name="android.hardware.location.gps" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+        </config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -26,13 +35,4 @@
     <plugin name="cordova-plugin-speechrecognizer" spec="https://github.com/poiuytrez/SpeechRecognizer" />
     <plugin name="cordova-plugin-tts" spec="^0.2.3" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
-    <config-file target="AndroidManifest.xml" parent="/*">
-        <uses-feature android:name="android.hardware.location.gps" />
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-    </config-file>
 </widget>
